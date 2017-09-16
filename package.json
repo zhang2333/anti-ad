@@ -1,0 +1,12 @@
+{
+  "name": "anti-ad",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "crx pack main -o ./dist/anti-ad.crx"
+  },
+  "devDependencies": {
+    "crx": "^3.2.1"
+  }
+}

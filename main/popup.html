@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 120px;
+            margin: 0;
+        }
+        
+        .btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 5px 10px;
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: #D6D6D6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btns">
+        <div id="btn-reset" class="btn">Reset this page</div>
+        <div id="btn-settings" class="btn">Settings</div>
+    </div>
+    <script src="scripts/popup.js"></script>
+</body>
+
+</html>
