@@ -1,4 +1,4 @@
-(function () {
+window.onload = function () {
     let antiStyleElement
 
     const hideElements = (selectors) => {
@@ -27,4 +27,4 @@
             antiStyleElement = hideElements(resp.hideSels)
         }
     })
-})()
+}

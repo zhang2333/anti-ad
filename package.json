@@ -1,12 +1,31 @@
 {
   "name": "anti-ad",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "crx pack main -o ./dist/anti-ad.crx"
+    "build": "npm run clean && npm run webpack && npm run pack",
+    "clean": "rimraf dist/main dist/anti-ad.crx",
+    "dev": "cross-env NODE_ENV=development webpack --progress --colors --watch",
+    "pack": "crx pack dist/main -o ./dist/anti-ad.crx && rimraf dist/main/key.pem",
+    "webpack": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.3.3"
   },
   "devDependencies": {
-    "crx": "^3.2.1"
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.0.0",
+    "crx": "^3.2.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "rimraf": "^2.6.2",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

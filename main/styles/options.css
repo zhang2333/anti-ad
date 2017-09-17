@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-size: 100%;
+}
+
+.main {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+.hiding-box {
+    width: 600px;
+    min-height: 400px;
+    border: 1px solid #CCCCCC;
+    display: flex;
+}
+
+.hiding-title {
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.hiding-left {
+    width: 200px;
+    min-height: 100%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.hiding-right {
+    width: 100%;
+    min-height: 100%;
+}
+
+.match-box {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.match-item {
+    padding: 6px;
+    text-align: center;
+}
+
+.match-item:hover {
+    background-color: #F0F0F0;
+}
+
+.match-item.active, .match-item.active:hover, .match-item:active {
+    background-color: #e4e4e4;
+}
+
+.match-controls {
+    margin-top: auto;
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.match-control {
+    width: 50%;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.match-new {
+    border-right: 1px solid #ccc;
+}
+
+.input-wrapper {
+    min-height: 100%;
+}
+
+.input-sels {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.input-new {
+    padding: 3px;
+    border: 0;
+    outline: 0;
+}
+
+.btn-save {
+    width: 300px;
+    margin-top: 50px;
+    padding: 8px;
+    background-color: #a8ffa8;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #CAFFCA;
+}
+
+.btn-save:active {
+    background-color: #7CFF7C;
+}
+
+.msg-box {
+    width: 600px;
+    margin-top: 150px;
+}
+
+.message {
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #cacaff;
+}

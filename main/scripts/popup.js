@@ -5,4 +5,9 @@
             chrome.tabs.sendMessage(tabs[0].id, { from: 'popup', method: 'reset' })
         })
     }
+
+    const settingsBtn = document.getElementById('btn-settings')
+    settingsBtn.onclick = function () {
+        window.open('options.html')
+    }
 })()

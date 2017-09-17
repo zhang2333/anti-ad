@@ -9,6 +9,7 @@
     "background": {
         "scripts": ["scripts/background.js"]
     },
+    "options_page": "options.html",
     "page_action": {
         "default_icon": "images/icon.png",
         "default_title": "Anti AD",

@@ -1,5 +1,11 @@
 let config = genDefaultConfig()
 
+chrome.storage.sync.get('config', (data) => {
+    if (data.config) {
+        config = Object.assign({}, genDefaultConfig(), data.config)
+    }
+})
+
 chrome.tabs.onUpdated.addListener((id, info, tab) => {
     if (match(config, tab.url)) {
         chrome.pageAction.show(id)
@@ -11,6 +17,12 @@ chrome.runtime.onMessage.addListener((msg, sender, send) => {
         case 'match':
             send(match(config, sender.url))
             break
+    }
+})
+
+chrome.storage.onChanged.addListener((changes) => {
+    if (changes.config) {
+        config = Object.assign({}, config, changes.config.newValue)
     }
 })
 
