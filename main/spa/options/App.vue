@@ -36,7 +36,7 @@
             </div>
             <div class="hiding-right">
                 <div class="hiding-title">
-                    Selectors
+                    Selectors (One selector per line)
                 </div>
                 <div class="input-wrapper">
                     <textarea class="input-sels" rows="20"
