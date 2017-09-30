@@ -1,7 +1,10 @@
 {
     "name": "Anti AD",
     "description": "hiding ADs",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "icons": {
+        "128": "images/icon.png"
+    },
     "permissions": [
         "tabs",
         "storage"
